@@ -1,0 +1,1052 @@
+2018-08-27 07:04:35 Error: [Error] Call to a member function allow() on boolean
+Request URL: /
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(272): App\Controller\TestsController->initialize()
+#1 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(46): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-08-27 07:16:42 Error: [LogicException] Controller actions can only return Cake\Http\Response or null.
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-08-27 07:26:32 Error: [Error] Call to a member function find() on boolean
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TestsController->getstates()
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2018-08-27 07:28:46 Error: [Error] Call to a member function find() on boolean
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TestsController->getstates()
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2018-08-27 07:34:22 Warning: Warning (512): Unable to emit headers. Headers sent in file=D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:34:22 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:34:22 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:34:22 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:35:59 Warning: Warning (512): Unable to emit headers. Headers sent in file=D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:35:59 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:35:59 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:35:59 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:41:46 Error: [BadMethodCallException] Unknown finder method "name"
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Table.php(1350): Cake\ORM\Table->callFinder('name', Object(Cake\ORM\Query), Array)
+#1 D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php(47): Cake\ORM\Table->find('name')
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TestsController->getstates()
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-08-27 07:42:08 Warning: Warning (512): Unable to emit headers. Headers sent in file=D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php line=48 in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:42:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php:48) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:42:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php:48) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:42:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php:48) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:48:07 Error: [Error] Call to a member function input() on boolean
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TestsController->getstates()
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2018-08-27 07:58:39 Warning: Warning (512): Unable to emit headers. Headers sent in file=D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php line=50 in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:58:39 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php:50) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:58:39 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php:50) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:58:39 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php:50) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:59:51 Warning: Warning (512): Unable to emit headers. Headers sent in file=D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php line=50 in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:59:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php:50) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:59:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php:50) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 07:59:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php:50) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 08:00:16 Warning: Warning (512): Unable to emit headers. Headers sent in file=D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php line=50 in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 08:00:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php:50) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 08:00:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php:50) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 08:00:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php:50) in [D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-08-27 08:11:27 Error: [Error] Call to a member function input() on null
+Request URL: /
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1240): include()
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('D:\\Xamapp\\htdoc...', Array)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('D:\\Xamapp\\htdoc...')
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-08-27 08:18:29 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('D:\\Xamapp\\htdoc...', Array)
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('D:\\Xamapp\\htdoc...')
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-08-27 08:34:57 Error: [Error] Class 'Router' not found
+Request URL: /
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1240): include()
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('D:\\Xamapp\\htdoc...', Array)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('D:\\Xamapp\\htdoc...')
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-08-27 08:35:41 Error: [Error] Class 'Router' not found
+Request URL: /
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1240): include()
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('D:\\Xamapp\\htdoc...', Array)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('D:\\Xamapp\\htdoc...')
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-08-27 08:36:44 Error: [Error] Class 'Router' not found
+Request URL: /
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1240): include()
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('D:\\Xamapp\\htdoc...', Array)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('D:\\Xamapp\\htdoc...')
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-08-27 08:38:33 Error: [Error] Class 'Router' not found
+Request URL: /
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1240): include()
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('D:\\Xamapp\\htdoc...', Array)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('D:\\Xamapp\\htdoc...')
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-08-27 08:39:02 Error: [Error] Class 'Router' not found
+Request URL: /
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1240): include()
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('D:\\Xamapp\\htdoc...', Array)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('D:\\Xamapp\\htdoc...')
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-08-27 09:34:08 Error: [Error] Class 'Router' not found
+Request URL: /
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1240): include()
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('D:\\Xamapp\\htdoc...', Array)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('D:\\Xamapp\\htdoc...')
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-08-27 09:59:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Hrms could not be found.
+Exception Attributes: array (
+  'class' => 'Hrms',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /hrms/Tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-08-27 09:59:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Cake3.6.4 could not be found.
+Exception Attributes: array (
+  'class' => 'Cake3.6.4',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /cake3.6.4/Tests/getstates
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(86): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2018-08-27 10:17:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'states.state_id' in 'where clause'
+Request URL: /tests/getcities
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1125): Cake\Database\Query->execute()
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1073): Cake\ORM\Query->_all()
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1324): Cake\ORM\Query->all()
+#11 [internal function]: Cake\ORM\Query->jsonSerialize()
+#12 D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php(73): json_encode(Object(Cake\ORM\Query))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TestsController->getcities()
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-08-27 10:24:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'states.state_id' in 'where clause'
+Request URL: /tests/getcities
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1125): Cake\Database\Query->execute()
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1073): Cake\ORM\Query->_all()
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1324): Cake\ORM\Query->all()
+#11 [internal function]: Cake\ORM\Query->jsonSerialize()
+#12 D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php(73): json_encode(Object(Cake\ORM\Query))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TestsController->getcities()
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-08-27 11:17:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'states.state_id' in 'where clause'
+Request URL: /tests/getcities
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1125): Cake\Database\Query->execute()
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1073): Cake\ORM\Query->_all()
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1324): Cake\ORM\Query->all()
+#11 [internal function]: Cake\ORM\Query->jsonSerialize()
+#12 D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php(73): json_encode(Object(Cake\ORM\Query))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TestsController->getcities()
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-08-27 11:18:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'states.state_id' in 'where clause'
+Request URL: /tests/getcities
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1125): Cake\Database\Query->execute()
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1073): Cake\ORM\Query->_all()
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1324): Cake\ORM\Query->all()
+#11 [internal function]: Cake\ORM\Query->jsonSerialize()
+#12 D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php(73): json_encode(Object(Cake\ORM\Query))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TestsController->getcities()
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-08-27 11:19:11 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'states.state_id' in 'where clause'
+Request URL: /tests/getcities
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1125): Cake\Database\Query->execute()
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1073): Cake\ORM\Query->_all()
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1324): Cake\ORM\Query->all()
+#11 [internal function]: Cake\ORM\Query->jsonSerialize()
+#12 D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php(73): json_encode(Object(Cake\ORM\Query))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TestsController->getcities()
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-08-27 11:19:23 Error: [Cake\View\Exception\MissingTemplateException] Template file "Tests\getcities.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Tests\\getcities.ctp',
+)
+Request URL: /tests/getcities
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(799): Cake\View\View->_getViewFileName('Tests\\getcities')
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-08-27 11:20:01 Error: [Cake\View\Exception\MissingTemplateException] Template file "Tests\getcities.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Tests\\getcities.ctp',
+)
+Request URL: /tests/getcities
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(799): Cake\View\View->_getViewFileName('Tests\\getcities')
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-08-27 11:20:15 Error: [Cake\View\Exception\MissingTemplateException] Template file "Tests\getstates.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Tests\\getstates.ctp',
+)
+Request URL: /tests/getstates
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\View\View.php(799): Cake\View\View->_getViewFileName('Tests\\getstates')
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-08-27 11:20:22 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'states.state_id' in 'where clause'
+Request URL: /tests/getcities
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1125): Cake\Database\Query->execute()
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1073): Cake\ORM\Query->_all()
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1324): Cake\ORM\Query->all()
+#11 [internal function]: Cake\ORM\Query->jsonSerialize()
+#12 D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php(73): json_encode(Object(Cake\ORM\Query))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TestsController->getcities()
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-08-27 11:22:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'states.state_id' in 'where clause'
+Request URL: /tests/getcities
+Referer URL: http://localhost/cake3.6.4/
+Stack Trace:
+#0 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1125): Cake\Database\Query->execute()
+#8 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1073): Cake\ORM\Query->_all()
+#10 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\ORM\Query.php(1324): Cake\ORM\Query->all()
+#11 [internal function]: Cake\ORM\Query->jsonSerialize()
+#12 D:\Xamapp\htdocs\cake3.6.4\src\Controller\TestsController.php(73): json_encode(Object(Cake\ORM\Query))
+#13 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TestsController->getcities()
+#14 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#15 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#16 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 D:\Xamapp\htdocs\cake3.6.4\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 D:\Xamapp\htdocs\cake3.6.4\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
