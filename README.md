@@ -1,4 +1,4 @@
-Below lines by diwaker
+Description-
 - This project is just a form for getting country and state by selecting country and city by choosing state.
 - cakephp 3.6.4(downloaded from github, as ajax was not working properly on cake 3.6.10)
 -database contains states, cities and countries
